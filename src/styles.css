@@ -1,1 +1,95 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-secondary-lightest: #f1fafd;
+  --color-secondary-dark: #1484ae;
+
+  --color-primary-light: #e8fbf7;
+  --color-primary: #19daad;
+  --color-primary-med: #17c49c;
+  --color-primary-dark: #129979;
+  --color-primary-darker: #074134;
+
+  --color-light-gray: #999;
+  --color-med-gray: #666;
+  --color-dark-gray: #333;
+  --color-dark-gray-trans: rgba(34, 34, 34, 0.6);
+  --color-darkest-gray: #222;
+  --color-black-shadow: rgba(0, 0, 0, 0.075);
+  --color-white: #fff;
+
+  --transition-quick: all 0.1s linear;
+
+  --border-radius-5: 5px;
+  --border-radius-8: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.4;
+  color: var(--color-dark-gray);
+}
+
+/* Shared */
+
+.center-section {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  transition: var(--transition-quick);
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: var(--border-radius-8);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: var(--color-primary-med);
+}
+
+.link {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  transition: var(--transition-quick);
+}
+
+.link:hover {
+  color: var(--color-primary);
+}
+
+.background-circle {
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+}

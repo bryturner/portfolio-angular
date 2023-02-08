@@ -1,0 +1,33 @@
+#header {
+  height: 6.8rem;
+}
+
+.header-container {
+  background-color: #fff;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.2s linear;
+}
+
+.header-shrink {
+  padding: 1.2rem 0;
+  box-shadow: 0 1.2rem 3.2rem var(--color-black-shadow);
+}
+
+.nav-list {
+  margin: 0 auto;
+  max-width: 130rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 3rem;
+  font-size: 2rem;
+}
+
+.nav-btn {
+  padding: 0.6rem 3rem;
+}
